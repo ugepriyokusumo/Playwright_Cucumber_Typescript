@@ -1,0 +1,26 @@
+{
+  "name": "playwrigth_cucumber_ts",
+  "version": "1.0.0",
+  "description": "Playwright Cucumber Typescript Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env ENV=staging cucumber-js --config=config/cucumber.js",
+    "test:failed": "cucumber-js ENV=staging -p rerun @rerun.txt",
+    "test:staging": "cross-env ENV=prod cucumber-js --config=config/cucumber.js"
+  },
+  "keywords": [
+    "cucumber",
+    "playwright-cucumber",
+    "playwright-ts"
+  ],
+  "author": "Uge Priyokusumo",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.5.1",
+    "@playwright/test": "^1.38.0",
+    "@types/node": "^20.6.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "ts-node": "^10.9.1"
+  }
+}
