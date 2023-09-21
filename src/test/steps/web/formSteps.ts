@@ -1,6 +1,6 @@
 import {Given,When,Then} from "@cucumber/cucumber"
 import {expect} from "@playwright/test"
-import { pageFixture } from "../../hooks/pageFixture";
+import { pageFixture } from "../../../hooks/pageFixture";
 
 Given('user go to application web', async function () {
    await pageFixture.page.goto(process.env.BASEURL);

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cross-env ENV=staging cucumber-js --config=config/cucumber.js",
     "test:failed": "cucumber-js ENV=staging -p rerun @rerun.txt",
-    "test:staging": "cross-env ENV=prod cucumber-js --config=config/cucumber.js"
+    "test:prod": "cross-env ENV=prod cucumber-js -p api --config=config/cucumber.js"
   },
   "keywords": [
     "cucumber",

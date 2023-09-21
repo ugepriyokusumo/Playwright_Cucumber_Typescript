@@ -5,11 +5,11 @@ module.exports = {
             snippetInterface: "async-await"
         },
         paths: [
-            "src/test/features"
+            "src/test/features/web"
         ],
         dryRun: false,
         require: [
-            "src/test/steps/*.ts",
+            "src/test/steps/web/*.ts",
             "src/hooks/*.ts",
             "src/helper/"
         ],
@@ -47,12 +47,11 @@ module.exports = {
             snippetInterface: "async-await"
         },
         paths: [
-            "src/test/features"
+            "src/test/features/api"
         ],
         dryRun: false,
         require: [
-            "src/test/steps/*.ts",
-            "src/hooks/*.ts",
+            "src/test/steps/api/*.ts",
             "src/helper/"
         ],
         requireModule: [
